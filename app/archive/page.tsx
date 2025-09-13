@@ -23,7 +23,7 @@ export default function ArchivePage() {
   const [selectedKingdom, setSelectedKingdom] = useState("All")
   const [selectedPeriod, setSelectedPeriod] = useState("All")
   const [filtersVisible, setFiltersVisible] = useState(false)
-  const [selectedItem, setSelectedItem] = useState(null)
+  const [selectedItem, setSelectedItem] = useState<typeof archiveItems[0] | null>(null)
 
   const categories = ["All", "Photographs", "Documents", "Artifacts", "Audio", "Video"]
   const kingdoms = ["All", "Oyo Empire", "Ibadan", "Ogbomoso", "Iseyin", "Saki", "Okeho"]
